@@ -1,0 +1,42 @@
+.main-container {
+    display: grid;
+    /* grid-template-columns: 1rem 1fr 1rem; */
+    grid-template-rows: 1fr auto;
+    min-height: 100vh;
+    padding-top: 146px;
+    
+    >* {
+        grid-column: 2;
+        
+        &.full {
+            grid-column: 1 / -1;
+        }
+    }
+}
+
+.content-area {
+    grid-row: 1; /* שורה 2 – זו שיש לה 1fr */
+    min-height: calc(100vh - 186px - 60px);
+}
+
+/* @media (min-width: 640px) {
+    .main-container {
+        grid-template-columns:
+        minmax(20px, 1fr) minmax(auto, 600px) minmax(20px, 1fr);
+    }
+} */
+
+
+@media (min-width: 760px) {
+    .main-container {
+        padding-top: 80px;
+        
+        /* grid-template-columns:
+        minmax(20px, 1fr) minmax(auto, 1200px) minmax(20px, 1fr); */
+    }
+    .content-area {
+        min-height: calc(100vh - 110px - 60px);
+        
+    }
+}
+/* grid-template-columns: minmax(1rem, 1fr) minmax(0, 1200px) minmax(1rem, 1fr); */

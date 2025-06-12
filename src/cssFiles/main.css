@@ -1,0 +1,27 @@
+/*BASE*/
+@import "./base/helpers.css";
+@import "./base/theme.css";
+@import "./base/App.css";
+/* @import "./base/layout.css"; */
+
+
+/*CMPS*/
+@import "./cmps/ai-agent.css";
+@import "./cmps/carousel.css";
+@import "./cmps/contactUs.css";
+@import "./cmps/Footer.css";
+@import "./cmps/glowSha.css";
+@import "./cmps/homePage.css";
+@import "./cmps/navbar.css";
+@import "./cmps/postomatic.css";
+@import "./cmps/webly.css";
+/* @import "./cmps/accessibility-menu.css"; */
+@import "./cmps/privacy-policy.css";
+@import "./cmps/term-of-service.css";
+@import "./cmps/hero.css";
+@import "./cmps/flip-cards.css";
+@import "./cmps/video-home.css";
+@import './cmps/workflowSteps.css';
+@import './cmps/scrollAnimation.css';
+@import "./cmps/integration.css"; 
+

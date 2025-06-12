@@ -1,0 +1,60 @@
+/* ScrollAnimation.css */
+
+/* אנימציה בסיסית - עליה מלמטה */
+.animate-item {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.animate-container.animate .animate-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* וריאציות נוספות */
+
+/* עליה מהצד */
+.animate-item-slide-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.animate-container.animate .animate-item-slide-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animate-item-slide-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.animate-container.animate .animate-item-slide-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* זום */
+.animate-item-scale {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.animate-container.animate .animate-item-scale {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* fade בלבד */
+.animate-item-fade {
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+.animate-container.animate .animate-item-fade {
+  opacity: 1;
+}

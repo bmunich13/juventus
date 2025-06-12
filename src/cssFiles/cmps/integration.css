@@ -1,0 +1,209 @@
+.hero-section {
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.integration-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.integration-description {
+  max-width: 400px;
+  margin: 0 auto 60px auto;
+  line-height: 1.6;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.integration-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.integration-icon {
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  aspect-ratio: 3 / 2;
+  max-width: 480px;
+  min-width: 400px;
+  background:var(--color-light);
+  border: none;
+color: none;
+  color: #160c3e;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease, transform 1.5s ease, box-shadow 0.3s ease;
+}
+
+.animate-container.animate .integration-icon {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.integration-icon:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.integration-icon:nth-child(2) {
+  transition-delay: 0.3s;
+}
+
+.icon-display {
+  width: 120px;
+  height: 80px;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons-group {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-icon {
+  position: absolute;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+
+  opacity: 0;
+  animation: iconAppear 0.8s ease forwards var(--delay),
+    floatAnimation 3s ease-in-out infinite var(--float-delay);
+}
+
+.crm-icons .floating-icon:nth-child(1) {
+  top: 10%;
+  left: 10%;
+}
+
+.crm-icons .floating-icon:nth-child(2) {
+  top: 10%;
+  right: 10%;
+}
+
+.crm-icons .floating-icon:nth-child(3) {
+  bottom: 10%;
+  left: 10%;
+}
+
+.crm-icons .floating-icon:nth-child(4) {
+  bottom: 10%;
+  right: 10%;
+}
+
+.comm-icons .floating-icon:nth-child(1) {
+  top: 5%;
+  left: 20%;
+}
+
+.comm-icons .floating-icon:nth-child(2) {
+  top: 5%;
+  right: 20%;
+}
+
+.comm-icons .floating-icon:nth-child(3) {
+  bottom: 5%;
+  left: 20%;
+}
+
+.comm-icons .floating-icon:nth-child(4) {
+  bottom: 5%;
+  right: 20%;
+}
+
+.comm-icons .floating-icon {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  box-shadow: 0 4px 15px rgba(240, 147, 251, 0.3);
+}
+
+.integration-icon h2 {
+  margin-bottom: 15px;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.integration-icon p {
+  line-height: 1.6;
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+@keyframes iconAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) rotate(-180deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes floatAnimation {
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  33% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+
+  66% {
+    transform: translateY(4px) rotate(-1deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .integration-icons {
+    flex-direction: column;
+    gap: 20px;
+    padding: 1rem;
+  }
+
+  .integration-icon {
+    min-width: auto;
+    max-width: 100%;
+    aspect-ratio: auto;
+    padding: 1.5rem;
+  }
+
+  .hero-section {
+    padding: 30px 15px;
+  }
+
+  .integration-title {
+    font-size: 2rem;
+  }
+
+  .icon-display {
+    width: 100px;
+    height: 70px;
+    margin-bottom: 15px;
+  }
+}

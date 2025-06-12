@@ -1,0 +1,39 @@
+.privacy-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+  line-height: 1.6;
+}
+
+.privacy-title {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+section {
+  margin-top: 24px;
+}
+
+section h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+@media (max-width: 600px) {
+  .privacy-container {
+    padding: 16px;
+  }
+
+  .privacy-title {
+    font-size: 24px;
+  }
+
+  section h2 {
+    font-size: 18px;
+  }
+}

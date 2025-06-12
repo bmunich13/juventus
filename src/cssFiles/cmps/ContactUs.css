@@ -1,0 +1,222 @@
+/* Contact Component - Targeted Styles */
+
+/* Component Variables */
+.contact-container {
+  --primary-yellow: #F4BD2D;
+  --bg-light: #FAFCFE;
+  --bg-dark: #080819;
+  --text-dark: #000000;
+  --text-light: #FFFFFF;
+  --text-gray: #3D3D59;
+  --font-heebo: 'Heebo', sans-serif;
+  --font-sora: 'Sora', sans-serif;
+}
+
+/* Main Container */
+.contact-container {
+  min-height: 85vh;
+  max-width: 800px;
+  margin: 100px auto 10px auto;
+  padding: 48px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  font-family: var(--font-sora);
+}
+
+/* Contact Card */
+.contact-card {
+  background:linear-gradient(135deg, #F4BD2D 0%, #B1D4EA 50%, #3D3D59 100%);
+  padding: 48px 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0px auto;
+}
+
+.contact-card h1 {
+  font-family: var(--font-heebo);
+  font-size: 36px;
+  font-weight: 400;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.contact-card p {
+  padding: 0 60px;
+  font-family: var(--font-sora);
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--text-gray);
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+/* Book Call Button */
+.book-call-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background:linear-gradient(135deg, #F4BD2D 0%, #B1D4EA 50%, #3D3D59 100%);
+  color: var(--text-dark);
+  text-decoration: none;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-family: var(--font-sora);
+  font-size: 22px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(244, 189, 45, 0.3);
+}
+
+.book-call-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(244, 189, 45, 0.4);
+}
+
+.book-call-button .icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Contact Section Title */
+.contact-container > div:last-child h1 {
+  font-family: var(--font-heebo);
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* Contact Links Container */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+/* Individual Contact Links */
+.contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-link .icon {
+  width: 28px;
+  height: 28px;
+}
+
+/* Specific Link Colors */
+.email-link {
+  background: linear-gradient(135deg, #EA4335, #D33B2C);
+  color: var(--text-light);
+}
+
+.facebook-link {
+  background: linear-gradient(135deg, #1877F2, #166FE5);
+  color: var(--text-light);
+}
+
+.whatsapp-link {
+  background: linear-gradient(135deg, #25D366, #20BC5A);
+  color: var(--text-light);
+}
+
+.instagram-link {
+  background: linear-gradient(135deg, #E4405F, #C13584);
+  color: var(--text-light);
+}
+
+.linkedin-link {
+  background: linear-gradient(135deg, #0A66C2, #004182);
+  color: var(--text-light);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 32px 16px;
+    gap: 48px;
+  }
+  
+  .contact-card {
+    padding: 32px 24px;
+  }
+  
+  .contact-card h1 {
+    font-size: 48px;
+  }
+  
+  .contact-card p {
+    font-size: 20px;
+  }
+  
+  .contact-container > div:last-child h1 {
+    font-size: 42px;
+  }
+  
+  .book-call-button {
+    font-size: 18px;
+    padding: 14px 24px;
+  }
+  
+  .contact-links {
+    gap: 16px;
+  }
+  
+  .contact-link {
+    width: 56px;
+    height: 56px;
+  }
+  
+  .contact-link .icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-card h1 {
+    font-size: 36px;
+  }
+  
+  .contact-card p {
+    font-size: 18px;
+  }
+  
+  .contact-container > div:last-child h1 {
+    font-size: 32px;
+  }
+  
+  .book-call-button {
+    font-size: 16px;
+    padding: 12px 20px;
+    gap: 8px;
+  }
+  
+  .contact-link {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .contact-link .icon {
+    width: 20px;
+    height: 20px;
+  }
+}

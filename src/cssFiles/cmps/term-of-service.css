@@ -1,0 +1,42 @@
+.terms-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.terms-title {
+  font-size: 32px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.terms-date {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+section {
+  margin-top: 24px;
+}
+
+section h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .terms-container {
+    padding: 16px;
+  }
+
+  .terms-title {
+    font-size: 24px;
+  }
+
+  section h2 {
+    font-size: 18px;
+  }
+}

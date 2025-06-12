@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    width: 100%;
+}
+
+/* html {
+    font-size: 1px;
+    color-scheme: light dark;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: $clr3; 
+} */
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    margin: 0;
+    background:url('/TaskoIcon.svg'),var(--color-light);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, center;
+  background-size: 800px, cover;
+  background-attachment: scroll, scroll;
+}
+
+.main-container {
+    min-height: 100vh;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* font-family: Livvic-Bold, sans-serif; */
+    margin: 0 0 1em;
+    /* margin: 0; */
+    text-wrap: balance;
+    /* Progressive enhancement */
+    /* font-size: 1rem; */
+
+    /* font-weight: normal;  */
+}
+
+p {
+    /* margin: 0; */
+    text-wrap: pretty;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:not([class]) {
+    text-decoration: underline;
+}
+
+input,
+button,
+textarea,
+select {
+    max-width: 100%;
+    font-family: inherit;
+}
+
+/* button {
+	border: 0;
+    border-radius: 1rem;
+	color: whitesmoke;
+	padding: 5px 10px;
+	margin: 5px;
+	cursor: pointer;
+} */
